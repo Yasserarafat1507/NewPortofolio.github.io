@@ -351,6 +351,10 @@ span{
 .bs {
     color: rgb(196, 15, 196);
 }
+.skill-box {
+    margin: 20px; /* tambahkan ini */
+    width: calc(25% - 20px); /* tambahkan ini */
+}
 
 .contact h2{
     margin-bottom: 3rem;
@@ -440,6 +444,11 @@ span{
         font-size: 2rem;
         margin: 3rem 0;
     }
+    .about-img img {
+        width: 100%; /* make it a square */
+        height: 100%; /* make it a square */
+        object-fit: cover; /* crop the image to fit the square shape */
+    }
 }
 @media (max-width: 991px){
     .header{
@@ -495,18 +504,9 @@ span{
     .portfolio-container{
         grid-template-columns: repeat(2,1fr);
     }
-    .school-container{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .school h2{
-        margin-top: 3rem;
-    }
 }
 @media (max-width: 617px){
     .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-    .school-container{
         grid-template-columns: 1fr;
     }
 }
@@ -516,6 +516,9 @@ span{
     }
     .contact form .input-box input{
         width: 100%;
+    }
+    .skill-box {
+        width: 100%; /* tambahkan ini */
     }
 }
 @media (max-width: 365px){
