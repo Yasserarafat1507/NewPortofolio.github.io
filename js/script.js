@@ -46,7 +46,7 @@ ScrollReveal({
     document.addEventListener('DOMContentLoaded', () => {
         try {
         const typed = new Typed('.multiple-text',{
-            strings:['Frontend Developer','Android Developer','Backend Developer','Santri'],
+            strings:['Front-End Developer','Android Developer','Back-End Developer','Santri'],
             typeSpeed:100,
             backSpeed:40,
             backDelay:1000,
