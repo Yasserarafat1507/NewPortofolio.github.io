@@ -133,6 +133,11 @@ span{
     height: 600px;
     border-radius: 5rem;
 }
+.about-img img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* ukuran maksimal gambar */
+}
 .heading{
     text-align: center;
     font-size: 4.5rem;
@@ -488,6 +493,9 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
+    .about-img img {
+        max-width: 300px; /* ukuran maksimal gambar pada layar kecil */
+    }
     .skill h2{
         margin-bottom: 3rem;
     }
@@ -512,6 +520,9 @@ span{
     }
     .skill-box {
         width: 100%; /* tambahkan ini */
+    }
+    .about-img img {
+        max-width: 200px; /* ukuran maksimal gambar pada layar sangat kecil */
     }
 }
 @media (max-width: 365px){
