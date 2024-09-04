@@ -41,12 +41,26 @@ ScrollReveal({
     ScrollReveal().reveal('.portfolio-box, .contact form, .skill-box',  { origin: 'bottom' });
     ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
     ScrollReveal().reveal('.about-img', { origin: 'left' });
-    Sc
+
     //typed js
-    const typed = new Typed('.multiple-text',{
-        strings:['Web Developer','Android Developer','Graphic Designer','Santri'],
-        teypSpeed:100,
-        backSpeed:100,
-        backDelay:1000,
-        loop:true
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+        try {
+        const typed = new Typed('.multiple-text',{
+            strings:['Frontend Developer','Android Developer','Backend Developer','Santri'],
+            typeSpeed:100,
+            backSpeed:40,
+            backDelay:1000,
+            loop:true
+        });
+        } catch (error) {
+            console.error('Error occurred:', error);
+        }
+        });
+
+        const typed = new Typed('.multiple-about',{
+            strings:['Front-End Developer','Android Developer','Back-End Developer',],
+            typeSpeed:100,
+            backSpeed:40,
+            backDelay:1000,
+            loop:true
+        });
