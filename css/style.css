@@ -46,6 +46,9 @@ body{
     font-weight: 600;
     cursor: default;
 }
+.logo::first-letter{
+    font-size: 6rem;
+}
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
@@ -55,6 +58,9 @@ body{
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
+}
+#mute-button {
+    margin-left: 20px;
 }
 #menu-icon{
     font-size: 3.6rem;
@@ -75,6 +81,9 @@ body{
 }
 .home {
     color: var(--text-color);
+}
+.home-content>h1::first-letter{
+    font-size: 7rem;
 }
 span{
     color: var(--main-color);
@@ -161,6 +170,8 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 3;
     gap: 2rem;
 }
 .skill-container .skill-box{
@@ -457,6 +468,9 @@ span{
     }
     .skill{
         padding-bottom: 7rem;
+    }
+    .skill-container{
+        flex-direction: row;
     }
     .portfolio{
         padding-bottom: 7rem;
