@@ -13,8 +13,8 @@
 :root{
     --bg-color:#000000;
     --second-bg-color:#474747;
-    --text-color:#fff;
-    --main-color:rgb(252, 207, 84);
+    --text-color:#ffffff;
+    --main-color:#1E90FF;
 }
 html{
     font-size: 62.5%;
@@ -299,7 +299,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--second-bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
