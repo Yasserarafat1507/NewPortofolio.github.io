@@ -64,24 +64,3 @@ ScrollReveal({
             backDelay:1000,
             loop:true
         });
-
-    // Buat variabel audio
-    let audio = new Audio('backsong.mp3');
-
-        let isMuted = false;
-
-function toggleMute() {
-    if (isMuted) {
-        // Jika suara sedang dimatikan, maka hidupkan suara
-        audio.play();
-        isMuted = false;
-        document.getElementById("mute-icon").classList.remove("bx-volume-mute");
-        document.getElementById("mute-icon").classList.add("bx-volume-high");
-    } else {
-        // Jika suara sedang hidup, maka matikan suara
-        audio.pause();
-        isMuted = true;
-        document.getElementById("mute-icon").classList.remove("bx-volume-high");
-        document.getElementById("mute-icon").classList.add("bx-volume-mute");
-    }
-}
